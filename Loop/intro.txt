@@ -1,0 +1,238 @@
+Types of C Loops
+There are three types of loops in C language that is given below:
+
+do while
+while
+for
+
+
+for(initialization; condition; incr/decr){  
+    //code to be executed  
+}  
+
+ex. 
+int i // dec
+i=0 // ins
+
+for(i=0; i<5; i++){
+
+}
+
+
+
+==> datatype
+
+Opertors
+------------
+
+opertion = operand + operand
+
+ex:- sum = 6 + 6 
+
+
+--> types of opertion
+-----------------------------
+- Unary opertion (one operand)
+	- logical opertion (!) not 
+		T => F
+		F => T
+
+	- increment / decrement --> a++ a--
+		a=10
+		a++;// a = a + 1;
+		
+		a=11
+		
+		a--;// a = a-1;
+		
+		a=10
+
+-binary opertion (two operands)
+	- Arithmentc (+,-,*,/,%)
+	- Relational 
+	- Assigmment
+	- Bitwise
+	- logical AND / OR
+
+-ternary opertion (therr operand)
+	systax: condition ? true : false;
+	
+-----------------------------------------------------------------
+
+
+--> Arithmentc
+
+=> + - * / % 
+		+ -> addition 			45 + 60 --> 105
+		- -> subtract			21 - 5  --> 16
+		* -> multiply			5 * 40  --> 200
+		/ -> divide 			10 / 5  --> 2
+		% -> modulus			11 % 2  --> 1
+
+--> Relational 
+
+return bool ==> T / F = 1 / 0 
+
+==>    < > >= <= != ==
+
+	<  -> less than              	12 < 12  --> 12 < 13.... F
+	<= -> less than or equal to    	12 <= 12 --> 12 < 13.... or 12 = 12 T  
+	>  -> greatet than 				45 > 50  --> 0 F 
+	>= -> greatet than ro equal to  45 >= 45 --> 1
+	!= -> not Equal to 				12 != 13  --> 1 T  
+	== -> equal to                  12 == 12 --> 1 , 12 == 45 --> 0
+
+
+age = 5
+	age < 6;       --> 1
+	age < 5;       -->0
+	age > 17;      -->0
+	age >= 18;     -->0
+	age <= 5;      -->1
+	age == 5;      -->1
+	age != 5;      --> 1
+
+	5 == 5;          →1
+	5 + 2 == 2 + 5;  →1
+	5 % 2 == 7 % 2;  → 1     
+	0 == 0;          →1
+	5 != 5;          →0
+	4 != 5;          →1
+	10 != 0;         →1
+	
+	
+****    Relational Operators Task 1 *******
+
+int a = 5 , b = 6 ;
+printf("1) %d\n",5>4); -> 
+printf("2) %d\n",5>=4); ->
+printf("3) %d\n",5==4); -> 
+printf("4) %d\n",5!=4); -> 
+printf("5) %d\n",5! =4); ->  
+printf("6) %d\n", a > 6); -> 
+printf("7) %d\n", a < 6); -> 
+printf("8) %d\n", a != 6); ->
+printf("9) %d\n", a = = 6); -> 
+printf("10) %d\n", a = 6 + 4); -> 
+printf("11) %d\n",a == a + b); -> 
+printf("12) %d\n",a != a + b); -> 
+printf("13) %d\n",a + b != a + b); 
+printf("14) %d\n",a + *  b != a + b); -> 
+printf("15) %d\n",a *  b == a + b); -> 
+printf("16) %d\n",18 >= 18); -> 
+printf("17) %d\n",17 <= 18); -> 
+printf("18) %d\n",170 >= 18 + 15 * 12); -> 
+printf("19) %d\n",170 >= 18 + 15 * 12); -> 
+printf("20) %d\n",a + b + b + a > b + a + b + a + b != a); 
+
+
+****    Relational Operators Task 2 *******
+
+int x = 10, y = 20, z = 10;
+
+printf("1) %d\n", x == z);
+printf("2) %d\n", x == y);
+printf("3) %d\n", x != y);
+printf("4) %d\n", x > y);
+printf("5) %d\n", x < y);
+printf("6) %d\n", x >= z);
+printf("7) %d\n", x <= z);
+printf("8) %d\n", x = y);
+printf("9) %d\n", x == y);
+printf("10) %d\n", x + y > y + z);
+printf("11) %d\n", x + y < y + z);
+printf("12) %d\n", x + y == y + x);
+printf("13) %d\n", x + y != y + z);
+printf("14) %d\n", (x + y) > (z + y));
+printf("15) %d\n", x + y + z == y + z + x);
+printf("16) %d\n", x == y == z);
+printf("17) %d\n", (x == y) == (y == z));
+printf("18) %d\n", x > y == 0);
+printf("19) %d\n", x > y + 5);
+printf("20) %d\n", x + y * z == y * z + x);
+
+***** Operators Task 3 ******
+int a = 7, b = 3, c = 10;
+
+printf("1) %d\n", a + b > c);
+printf("2) %d\n", a - b < c);
+printf("3) %d\n", a * b >= c);
+printf("4) %d\n", a / b <= c);
+printf("5) %d\n", a % b == c);
+printf("6) %d\n", c % a != b);
+printf("7) %d\n", a * b == c);
+printf("8) %d\n", a + b == c);
+printf("9) %d\n", a - b == c);
+printf("10) %d\n", c / a < b);
+printf("11) %d\n", c / b >= a);
+printf("12) %d\n", a * b + c > b + c * a);
+printf("13) %d\n", a + b * c > a * b + c);
+printf("14) %d\n", (a + b) * c > a * (b + c));
+printf("15) %d\n", a + b + c == c + b + a);
+printf("16) %d\n", a + b + c != a * b * c);
+printf("17) %d\n", a * a > c + b);
+printf("18) %d\n", a + a > b + b + b);
+printf("19) %d\n", (c - b) * a < (b + a) * c);
+printf("20) %d\n", c % (a - b) == a % (c - b));
+
+
+==========================================================
+			varibale 
+==========================================================
+	int  --> 2 to 4 bit (ex: 2 4 7 45)
+	float --> 4 bit     (ex: 0.23 2.000000 )
+	char  --> 1 bit     (ex: A to Z and a to z)
+	double--> 8 bit     (ex: 0.23 2.000000 )
+
+
+datatype nameofval = value;
+
+int        Remot   = 12;
+
+naming rules :
+
+	--> first letter 
+			-> A-Z
+			-> a-z
+			-> $
+			-> _
+			
+	--> secoed letter
+			-> A-Z
+			-> a-z 
+			-> $
+			-> _
+			-> 0-9
+
+
+int age;
+int ag e; 
+int 1age; 
+int #age; 
+int a1ge;
+int AAee;
+int tdfyguhj=10; 
+
+boolean --> true(1) and false(0)
+
+
+
+Scanf Task---------
+ 1) Input your name and print it.
+ 2) Input age from the user and print it.
+ 3) Input marks of three subjects from user and print it.
+ 4) Input roll no from user and print it.
+ 5) Input two integers and print their sum and product.
+ 6) Input your name and surname and print it.
+ 7) Input three integers in a single line (e.g. 10 20 30) and print their average.
+ 8) Ask the user to enter radius. Print area and circumference of a circle.
+ 9) Ask the user for principal, rate, and time. Print Simple Interest.
+ 10) Input temperature in Celsius. Convert to Fahrenheit.
+ 11) Input 5 subject marks. Calculate total, average, and percentage.
+ 12) Take 3 inputs: name, city, pin-code (e.g. Harsh Ahmedabad 382415) and print it.
+ 13) Input name, surname , marks , age , roll no from user and print it in proper format.
+ 14) Input mass and acceleration → calculate force (F = m * a).
+ 15) Input base and height → calculate area of parallelogram.
+ 16) Input radius and height → calculate volume of cone.
+ 17) Input time in format HH:MM and print hours and minutes separately.
+ 18) Input a date in format DD-MM-YYYY and print day, month, year separately
